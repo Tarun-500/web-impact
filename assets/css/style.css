@@ -404,6 +404,59 @@ nav a {
 /* -------- section-7 ------- */
 .web_audit_section {
   padding: 220px 0 0 0;
+
+
+
+
+  /* Card Styling */
+  .feature-card {
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  }
+
+
+  /* Card design */
+  .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .animate-up {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
 }
 
 /* -------- section-8 ------ */
@@ -735,90 +788,11 @@ footer {
   }
 }
 
-/* Card Styling */
-.feature-card {
-  background: #fff;
-  border: 1px solid #eee;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  position: relative;
-  height: 100%;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-}
-
-.feature-card h5 {
-  font-weight: bold;
-  color: #3a68b8;
-  margin-bottom: 10px;
-}
-
-.feature-card p {
-  font-size: 14px;
-  color: #555;
-}
-
-.icon {
-  font-size: 28px;
-  color: #3a68b8;
-  margin-bottom: 15px;
-}
-
-/* Card design */
-.card {
-  border: none;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.card-body h5 {
-  color: #333;
-}
-
-.card a {
-  text-decoration: none;
-}
-
-.card-footer img {
-  width: 50px;
-  height: 50px;
-}
-
-
-
-/* Animation */
-.animate-up {
-  animation: fadeInUp 1s ease-in-out;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* -------------- slider common css ---------  */
 .swiper-container {
   position: relative;
 }
 
-/* -------------- slider common css ---------  */
 .swiper-slide {
   text-align: center;
 }

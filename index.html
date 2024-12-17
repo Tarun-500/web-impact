@@ -16,104 +16,108 @@
 </head>
 
 <body>
-  <!-- -- header section-1 ----- -->
+  <!------- header section-1 ---------->
   <section>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="assets/images/logo.svg" alt="Logo" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Success Stories</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="sampleReportsDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Sample Reports
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="sampleReportsDropdown">
-                  <li><a class="dropdown-item" href="#">SEO Reports</a></li>
-                  <li><a class="dropdown-item" href="#">Audit Reports</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Competitor Reports</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="useCasesDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Use Cases
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="useCasesDropdown">
-                  <li><a class="dropdown-item" href="#">Agency</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Small Business</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Enterprise</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <button class="button btn-green">FREE TRIAL</button>
-              </li>
-              <li class="nav-item">
-                <button class="button btn-outline-success">LOGIN</button>
-              </li>
-            </ul>
-          </div>
+    <header class="section-container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.svg" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Success Stories</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="sampleReportsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Sample Reports
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="sampleReportsDropdown">
+                <li><a class="dropdown-item" href="#">SEO Reports</a></li>
+                <li><a class="dropdown-item" href="#">Audit Reports</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Competitor Reports</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="useCasesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Use Cases
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="useCasesDropdown">
+                <li><a class="dropdown-item" href="#">Agency</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Small Business</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Enterprise</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <button class="button btn-green">FREE TRIAL</button>
+            </li>
+            <li class="nav-item">
+              <button class="button btn-outline-success">LOGIN</button>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
   </section>
 
-  <!-- banner section-2 -->
-  <section class="hero-section  mx-auto">
+  <!------ banner section-2 -------->
+  <section class="banner-section  mx-auto">
     <div class="row content section-container mx-auto">
-      <div class="col-md-6">
-        <h1>Audits that help your agency close more deals.</h1>
-        <p>
-          Build trust faster and close more—and bigger—deals with beautiful,
-          actionable, and easy-to-understand website audits.
+      <div class="col-md-6 my-auto">
+        <h1 class="head-1 text-white">Audits that help your agency close more deals.</h1>
+        <p class="para-2 text-white m-0">
+          Build trust faster and close more—and bigger—deals with beautiful, actionable, and easy to understand website
+          audits.
         </p>
-        <form class="form-inline">
-          <input type="email" placeholder="Email" />
-          <button type="submit" class="button btn-success">
-            TRY FOR FREE
+        <div class="button-group">
+          <form class="banner-input">
+            <input type="email" placeholder="Email" />
+            <button type="submit" class="btn-success">
+              TRY FOR FREE
+            </button>
+          </form>
+          <button type="button" class="btn-underline">
+            Or view success stories
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M9.12498 15.3001L15.725 8.70006C15.825 8.60006 15.896 8.49173 15.938 8.37506C15.98 8.25839 16.0007 8.13339 16 8.00006C16 7.86673 15.979 7.74173 15.937 7.62506C15.895 7.50839 15.8243 7.40006 15.725 7.30006L9.12498 0.70006C8.94165 0.516727 8.71232 0.421061 8.43698 0.413061C8.16165 0.405061 7.92432 0.500727 7.72499 0.70006C7.52499 0.883394 7.42065 1.11273 7.41198 1.38806C7.40332 1.66339 7.49932 1.90073 7.69998 2.10006L12.6 7.00006H1.42498C1.14165 7.00006 0.903985 7.09606 0.711985 7.28806C0.519984 7.48006 0.424317 7.71739 0.424984 8.00006C0.424984 8.28339 0.520651 8.52106 0.711985 8.71306C0.903318 8.90506 1.14098 9.00073 1.42498 9.00006H12.6L7.69998 13.9001C7.51665 14.0834 7.42065 14.3167 7.41198 14.6001C7.40332 14.8834 7.49932 15.1167 7.69998 15.3001C7.88332 15.5001 8.11665 15.6001 8.39998 15.6001C8.68332 15.6001 8.92498 15.5001 9.12498 15.3001Z"
+                fill="var(--white)" />
+            </svg>
           </button>
-          <button type="button" class="button btn-outline-light">
-            OR VIEW SUCCESS STORIES
-          </button>
-        </form>
-        <p>
-          Runs on ALL popular website platforms from WordPress and Wix to
-          Shopify and Magento.
+        </div>
+        <p class="m-0 mxw-380">
+          Runs on ALL popular website platforms from WordPress and Wix to Shopify and Magento.
         </p>
       </div>
-      <div class="col-md-6 image-container">
+      <div class="col-md-6 my-auto">
         <img src="assets/images/banner_hero.webp" alt="Featured Customer" class="img-fluid" />
       </div>
     </div>
   </section>
 
-  <!-- ----- agencies slider section-3 ----- -->
+  <!----------- agencies slider section-3 -------------->
   <section class="section-container mx-auto agencies-section">
     <h2 class="text-head-blue text-center head-2 mx-auto mxw-900">
       Featured and trusted by some of the world's fastest growing companies
@@ -160,7 +164,7 @@
     </div>
   </section>
 
-  <!-- section-4 -->
+  <!----------- section-4 ---------->
   <section class="value-section bg-navy">
     <div class="section-container mx-auto">
       <h2 class="head-2 text-center text-white">
@@ -248,19 +252,19 @@
             d="M9.21939 8.7267C9.21452 9.6685 8.55399 10.4597 7.77038 10.4626C6.97215 10.4655 6.30066 9.64071 6.3165 8.67698C6.33234 7.72349 6.98312 6.97473 7.78744 6.98497C8.58202 6.9952 9.22549 7.7776 9.21939 8.7267Z"
             fill="#3D3E40" />
         </svg>
-        <p>Website Audit</p>
+        <p class="para-2">Website Audit</p>
       </div>
 
       <div class="audit-box">
         <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
           <path
             d="M5.89191 50.0005C4.63671 50.0005 4.07694 49.3428 4.07694 47.8672V44.5901C4.07694 38.0042 4.07572 31.1948 4.08427 24.4964C4.08427 24.1834 4.03783 24.0867 3.8215 23.9526C1.79019 22.6862 0.531322 20.6625 0.0791058 17.9379C-0.104225 16.8316 0.0289954 15.871 0.500766 14.9132C2.7154 10.4173 4.88359 5.87529 7.09578 1.23084C7.49422 0.394257 8.05644 0.00481541 8.86554 0.00481541H8.89732C9.69175 0.0149121 10.5583 0.0192392 11.6228 0.0192392C12.2107 0.0192392 12.7986 0.0192392 13.3877 0.0163544C13.9756 0.0163544 14.5647 0.0134697 15.1526 0.0134697H25.8664C29.8178 0.0149121 34.5086 0.0134697 39.3449 0.000488281C40.2628 0.000488281 40.869 0.42022 41.3163 1.36209C43.0555 5.02285 44.8424 8.73264 46.5706 12.3213C47.1646 13.5531 47.7573 14.7849 48.3501 16.0166C48.3745 16.0686 48.388 16.1263 48.388 16.1854V17.2874C48.388 17.3321 48.3806 17.3768 48.366 17.4172C48.3562 17.4446 48.3452 17.472 48.333 17.5009C48.3269 17.5153 48.3208 17.5283 48.3159 17.5427C47.97 20.4404 46.6867 22.6054 44.5001 23.98C44.3058 24.1026 44.2667 24.1877 44.2667 24.4877C44.2753 31.2005 44.274 38.0259 44.274 44.6262V47.8586C44.274 49.3384 43.7143 49.9991 42.4603 49.9991C36.3652 49.9991 30.27 49.9991 24.1761 49.9991C18.0822 49.9991 11.9858 49.9991 5.89191 49.9991V50.0005ZM10.573 46.5042V46.0902C10.573 44.7243 10.5754 43.3583 10.5778 41.9924C10.5827 38.8192 10.5876 35.5392 10.5656 32.3126C10.5448 29.4163 12.2046 27.1042 14.4266 26.9354C14.8886 26.9008 15.3921 26.8835 15.9653 26.8835C16.5385 26.8835 17.0739 26.8994 17.6129 26.9138C18.0284 26.9253 18.4574 26.9369 18.8778 26.9412C19.0734 26.9441 19.2616 27.0076 19.4119 27.0609C21.4029 27.7475 22.5946 29.65 22.5982 32.1496C22.6031 35.4743 22.6019 38.8538 22.6019 42.1222C22.6019 43.4838 22.6019 46.4955 22.6019 46.4955H41.3126V24.9464C38.4735 24.6363 37.8501 24.28 35.5793 21.6304C34.2544 23.7088 32.1327 24.9377 29.8312 24.9392C27.6093 24.9392 25.5731 23.7651 24.1883 21.7011C22.7767 23.7925 20.7967 24.9377 18.5735 24.9377C16.2953 24.9377 14.121 23.6843 12.7998 21.639C11.3209 23.8055 9.38131 24.9176 7.0249 24.9478V46.5042H10.5754H10.573ZM19.6821 46.5042V43.5141C19.6845 39.7481 19.6857 35.8551 19.6796 32.0256C19.6784 31.0044 19.1088 30.3337 18.2313 30.3193C17.872 30.3135 17.487 30.3106 17.0189 30.3106C16.7109 30.3106 16.4029 30.3106 16.0949 30.3135C15.8138 30.3135 15.5314 30.3164 15.2503 30.3164C14.0061 30.3164 13.5209 30.8861 13.5209 32.3472C13.5209 35.6532 13.5209 38.9591 13.5209 42.265V46.5056H19.6845L19.6821 46.5042ZM37.1987 17.8413C37.5531 19.7856 39.2117 21.3808 41.0523 21.476C41.1159 21.4789 41.1782 21.4804 41.2417 21.4804C43.1618 21.4804 44.7739 20.0034 45.2762 17.8413H37.1987ZM25.831 17.8225C26.161 19.8188 27.916 21.4573 29.8325 21.4789H29.8691C31.788 21.4789 33.5577 19.8404 33.9036 17.8225H25.831ZM14.4547 17.8254C14.836 19.8591 16.5715 21.4659 18.4831 21.4775H18.5051C20.4093 21.4775 22.146 19.8721 22.5347 17.8254H14.4547ZM3.08695 17.8326C3.58195 19.9716 5.1757 21.4486 7.07501 21.476H7.12878C9.0232 21.476 10.6365 19.9976 11.1645 17.8326H3.08695ZM44.1653 14.3031C44.1653 14.3031 43.3476 12.6054 42.9406 11.7631C41.683 9.15526 40.3838 6.45945 39.1176 3.79971C38.9966 3.54729 38.9037 3.48527 38.6421 3.48527C33.768 3.49104 28.8938 3.49393 24.0209 3.49393C19.1479 3.49393 14.4645 3.49104 9.68564 3.48671V3.14343L9.68441 3.48671C9.43753 3.48671 9.35442 3.54008 9.2432 3.77375C8.00266 6.38012 6.73034 9.02256 5.49958 11.577C5.06204 12.4857 4.62449 13.3944 4.18816 14.3031H44.1653Z"
-            fill="#1F2278" />
+            fill="#3D3E40" />
           <path
             d="M32.9187 41.0399C32.6034 41.0399 32.288 41.0399 31.9739 41.037C31.6598 41.037 31.3445 41.0341 31.0304 41.0341C31.0304 41.0341 30.3741 41.0341 30.06 41.0341C29.7446 41.0341 29.4293 41.0341 29.114 41.0341C28.7314 41.0341 28.3501 41.0341 27.9675 41.0298C25.715 41.011 24.2508 39.2801 24.2386 36.6218C24.23 34.8391 24.23 33.039 24.2386 31.2721C24.2508 28.5993 25.7175 26.8685 27.9737 26.8627C29.0199 26.8598 30.0661 26.8584 31.1123 26.8584C32.09 26.8584 33.0678 26.8598 34.0456 26.8627C36.2443 26.8699 37.733 28.6109 37.7513 31.1942C37.7647 33.0981 37.7647 34.9545 37.7513 36.7113C37.7317 39.3018 36.2944 40.9966 34.0908 41.0283C33.7009 41.0341 33.3098 41.0355 32.9199 41.0355L32.9187 41.0399ZM32.8307 37.581C33.2304 37.581 33.6312 37.581 34.0309 37.5781C34.6396 37.5753 34.8253 37.3589 34.8278 36.6565C34.8327 34.9314 34.8327 33.1169 34.8278 31.262C34.8253 30.5466 34.6359 30.3158 34.0468 30.3143C33.0226 30.3114 31.9996 30.31 30.9754 30.31C29.9512 30.31 28.949 30.3114 27.937 30.3158C27.3711 30.3172 27.1694 30.5538 27.167 31.2201C27.1609 32.9553 27.1609 34.7886 27.167 36.668C27.1694 37.3719 27.3491 37.5753 27.97 37.5796C28.3696 37.5825 28.7693 37.5825 29.169 37.5825H31.0011H32.8319L32.8307 37.581Z"
-            fill="#1F2278" />
+            fill="#3D3E40" />
         </svg>
-        <p>Google Business Profile Audit</p>
+        <p class="para-2">Google Business Profile Audit</p>
       </div>
 
       <div class="audit-box">
@@ -272,11 +276,11 @@
             d="M36.7146 5.28516H39.0956V8.1423H36.7146V5.28516ZM33.1432 5.28516H35.5242V8.1423H33.1432V5.28516ZM29.5718 5.28516H31.9527V8.1423H29.5718V5.28516ZM4.57178 5.28516H16.4765V8.1423H4.57178V5.28516Z"
             fill="#3D3E40" />
         </svg>
-        <p>On Page SEO Audit</p>
+        <p class="para-2">On Page SEO Audit</p>
       </div>
 
       <div class="audit-box">
-        <svg xmlns="http://www.w3.org/2000/svg" width="58" height="52" viewBox="0 0 58 52" fill="none">
+        <svg width="58" height="52" viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M51.6478 40.1679H5.48029V4.58294C5.48029 3.15641 6.44437 1.99951 7.63314 1.99951H49.4949C50.6837 1.99951 51.6478 3.15508 51.6478 4.58294V40.1679Z"
             stroke="#3D3E40" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -310,7 +314,8 @@
           <path d="M29.3019 45.0837H27.8254" stroke="#3D3E40" stroke-width="4" stroke-miterlimit="10"
             stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-        <p>Digital Competitive Analysis Audit</p>
+
+        <p class="para-2">Digital Competitive Analysis Audit</p>
       </div>
 
       <div class="audit-box">
@@ -325,7 +330,7 @@
             d="M38.1453 49.9993C35.1021 49.9993 32.6268 47.029 32.6268 43.3771C32.6268 39.7252 35.1021 36.7549 38.1453 36.7549C41.1886 36.7549 43.6639 39.7252 43.6639 43.3771C43.6639 47.029 41.1886 49.9993 38.1453 49.9993ZM38.1453 40.3048C36.7334 40.3048 35.5838 41.6842 35.5838 43.3786C35.5838 45.0729 36.7334 46.4524 38.1453 46.4524C39.5573 46.4524 40.7068 45.0744 40.7068 43.3786C40.7068 41.6827 39.5573 40.3048 38.1453 40.3048Z"
             fill="#3D3E40" />
         </svg>
-        <p>E-commerce Website Audit</p>
+        <p class="para-2">E-commerce Website Audit</p>
       </div>
 
       <div class="audit-box">
@@ -343,12 +348,12 @@
             d="M31.7469 32.3405C31.7469 35.9166 29.3875 38.2501 27.1139 38.2501C24.8404 38.2501 22.481 35.9166 22.481 32.3405C22.481 28.7644 24.8404 26.4309 27.1139 26.4309C29.3875 26.4309 31.7469 28.7644 31.7469 32.3405Z"
             stroke="#3D3E40" stroke-width="3.5" />
         </svg>
-        <p>+6 Other Templates</p>
+        <p class="para-2">+6 Other Templates</p>
       </div>
     </div>
   </section>
 
-  <!-- -------- section-6 -------- -->
+  <!-- --------google audit  section-6 -------- -->
   <section class="container-fluid google-section">
     <div class="row align-items-center">
       <div class="col-md-5">
@@ -385,8 +390,8 @@
     </div>
   </section>
 
-  <!-- ---- section-7 ------- -->
-  <section class="web_audit_section">
+  <!------- section-7 ------------>
+  <section class="section-container web_audit_section">
     <h2 class="text-head-blue head-2 text-center">
       How is My Web Audit different?
     </h2>
@@ -397,9 +402,9 @@
 
     <div class="row">
       <div class="col-md-4">
-        <div class="feature-card text-center">
+        <div class="feature-card">
           <div class="icon">
-            <i class="fas fa-paint-brush"></i>
+            <img src="assets/images/icons/audit_1.svg" alt="one">
           </div>
           <h5>Beautiful and actionable</h5>
           <p>
@@ -412,9 +417,9 @@
 
       <!-- Feature 2 -->
       <div class="col-md-4">
-        <div class="feature-card text-center">
+        <div class="feature-card">
           <div class="icon">
-            <i class="fas fa-chart-line"></i>
+            <img src="assets/images/icons/audit_2.svg" alt="two">
           </div>
           <h5>Measure what matters</h5>
           <p>
@@ -426,9 +431,9 @@
 
       <!-- Feature 3 -->
       <div class="col-md-4">
-        <div class="feature-card text-center">
+        <div class="feature-card">
           <div class="icon">
-            <i class="fas fa-magnet"></i>
+            <img src="assets/images/icons/audit_3.svg" alt="three">
           </div>
           <h5>Doubles as a lead magnet</h5>
           <p>
@@ -440,9 +445,9 @@
 
       <!-- Feature 4 -->
       <div class="col-md-4">
-        <div class="feature-card text-center">
+        <div class="feature-card">
           <div class="icon">
-            <i class="fas fa-bullseye"></i>
+            <img src="assets/images/icons/audit_4.svg" alt="four">
           </div>
           <h5>Crafted to convert</h5>
           <p>
@@ -454,9 +459,9 @@
 
       <!-- Feature 5 -->
       <div class="col-md-4">
-        <div class="feature-card text-center">
+        <div class="feature-card">
           <div class="icon">
-            <i class="fas fa-user-cog"></i>
+            <img src="assets/images/icons/audit_5.svg" alt="five">
           </div>
           <h5>Personalized for you</h5>
           <p>
@@ -468,9 +473,9 @@
 
       <!-- Feature 6 -->
       <div class="col-md-4">
-        <div class="feature-card text-center">
+        <div class="feature-card">
           <div class="icon">
-            <i class="fas fa-stopwatch"></i>
+            <img src="assets/images/icons/audit_6.svg" alt="six">
           </div>
           <h5>Reviews sites in a snap</h5>
           <p>
@@ -483,9 +488,9 @@
 
       <!-- Feature 7 -->
       <div class="col-md-4">
-        <div class="feature-card text-center">
+        <div class="feature-card">
           <div class="icon">
-            <i class="fas fa-bell"></i>
+            <img src="assets/images/icons/audit_7.svg" alt="seven">
           </div>
           <h5>Monitors client activity</h5>
           <p>
@@ -497,9 +502,9 @@
 
       <!-- Feature 8 -->
       <div class="col-md-4">
-        <div class="feature-card text-center">
+        <div class="feature-card">
           <div class="icon">
-            <i class="fas fa-sync-alt"></i>
+            <img src="assets/images/icons/audit_8.svg" alt="eight">
           </div>
           <h5>Zapier integration & workflows</h5>
           <p>
@@ -511,9 +516,9 @@
 
       <!-- Feature 9 -->
       <div class="col-md-4">
-        <div class="feature-card text-center">
+        <div class="feature-card">
           <div class="icon">
-            <i class="fas fa-check-circle"></i>
+            <img src="assets/images/icons/audit_9.svg" alt="nine">
           </div>
           <h5>Ready for your sales process</h5>
           <p>
@@ -525,7 +530,7 @@
     </div>
   </section>
 
-  <!-- --- section-8 ----- -->
+  <!------- Testimonials section-8 ------->
   <section class="testimonials-section">
     <h2 class="head-2 text-center text-white">Testimonials</h2>
     <p class="para-1 text-center text-white mxw-900 mx-auto">
@@ -534,9 +539,9 @@
       close more deals. Here are just a few.
     </p>
 
-    <div class="row">
+    <div class="section-container mx-auto row">
       <!-- Testimonial 1 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card shadow-lg animate-up">
           <div class="card-body">
             <h5 class="font-weight-bold">
@@ -558,7 +563,7 @@
         </div>
       </div>
       <!-- Testimonial 2 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card shadow-lg animate-up">
           <div class="card-body">
             <h5 class="font-weight-bold">
@@ -580,7 +585,7 @@
         </div>
       </div>
       <!-- Testimonial 3 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card shadow-lg animate-up">
           <div class="card-body">
             <h5 class="font-weight-bold">
@@ -607,7 +612,7 @@
     </div>
   </section>
 
-  <!-- --- section-9 ----- -->
+  <!------- section-9 --------->
   <section class="slider-section">
     <h2 class="head-2 text-head-blue text-center mxw-900 mx-auto">
       This is just a placeholder headline, we will replace it once your
@@ -767,7 +772,7 @@
     </div>
   </section>
 
-  <!--------- section-10 ------->
+  <!--------- section-10 --------->
   <section class="case-section">
     <div class="mx-auto section-container row">
       <div class="col-md-6 my-auto">
@@ -827,14 +832,14 @@
                 <p class="highlight">Paul Stoute</p>
                 <span>Stoute Web Solutions</span>
               </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 
-  <!------- section-11 ---- -->
+  <!------- section-11 --------->
   <section class="trial-section">
     <div class="section-container mx-auto">
       <div class="row align-items-center">
@@ -857,7 +862,7 @@
     </div>
   </section>
 
-  <!------- section-12 ----------- -->
+  <!--------- section-12 --------------->
   <footer class="footer">
     <div class="container-fluid section-container">
       <div class="row footer-top">
@@ -899,7 +904,7 @@
           <ul>
             <li><a href="#" class="para-3 text-grey">Knowledge Base</a></li>
           </ul>
-          <h5  class="head-5 text-color">Case Studies</h5>
+          <h5 class="head-5 text-color">Case Studies</h5>
           <ul>
             <li><a href="#" class="para-3 text-grey">Stoute Web Solutions</a></li>
             <li><a href="#" class="para-3 text-grey">RadiateWP</a></li>
@@ -924,22 +929,31 @@
             <li><a href="#" class="para-3 text-grey">Webinars & Workshops</a></li>
             <li><a href="#" class="para-3 text-grey">Retainers & Care Plans</a></li>
           </ul>
-          <h5  class="head-5 text-color">Supported Languages</h5>
-          <ul>
-            <li class="para-3 text-grey"><img src="assets/images/country/country_de.svg" alt="DE"> Deutsch</li>
-            <li class="para-3 text-grey"><img src="assets/images/country/country_fr.svg" alt="FR"> Français</li>
-            <li class="para-3 text-grey"><img src="assets/images/country/country_en.svg" alt="En"> English</li>
-            <li class="para-3 text-grey"> <img src="assets/images/country/country_ne.svg" alt="NL"> Nederlands</li>
-            <li class="para-3 text-grey"> <img src="assets/images/country/country_es.svg" alt="MX"> Español</li>
-            <li class="para-3 text-grey"><img src="assets/images/country/country_pr.svg" alt="PE"> Português</li>
-          </ul>
+          <h5 class="head-5 text-color">Supported Languages</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul>
+                <li class="para-3 text-grey"><img src="assets/images/country/country_de.svg" alt="DE"> Deutsch</li>
+                <li class="para-3 text-grey"><img src="assets/images/country/country_fr.svg" alt="FR"> Français</li>
+                <li class="para-3 text-grey"><img src="assets/images/country/country_en.svg" alt="En"> English</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li class="para-3 text-grey"> <img src="assets/images/country/country_ne.svg" alt="NL"> Nederlands</li>
+                <li class="para-3 text-grey"> <img src="assets/images/country/country_es.svg" alt="MX"> Español</li>
+                <li class="para-3 text-grey"><img src="assets/images/country/country_pr.svg" alt="PE"> Português</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="footer-bottom">
-      <p class="para-4 m-0 text-center text-grey">
-        &copy; 2023 My Web Audit. A HireAWiz Venture.
-        <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a>
-      </p>
+        <p class="para-4 m-0 text-center text-grey">
+          &copy; 2023 My Web Audit. A HireAWiz Venture.
+          <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a>
+        </p>
       </div>
     </div>
   </footer>

@@ -86,8 +86,6 @@ ul {
   }
 }
 
-
-
 .btn-outline-green {
   border-radius: var(--rounded-10);
   border: 1px solid var(--green);
@@ -167,8 +165,6 @@ ul {
 .blue-text {
   color: var(--blue);
 }
-
-
 
 .head-1 {
   font-family: var(--font);
@@ -277,10 +273,7 @@ ul {
 }
 
 /* ---------- section-1 --------- */
-header {
-  .navbar-expand-lg .navbar-nav {
-    gap: 10px;
-  }
+header { 
 
   .navbar {
     padding: 30px 0;
@@ -294,9 +287,7 @@ header {
     font-weight: var(--fw-600);
     line-height: normal;
   }
-
 }
-
 
 /* ------ section-2 ------ */
 .banner-section {
@@ -479,7 +470,6 @@ header {
     }
   }
 
-
   .report-images {
     position: relative;
   }
@@ -500,7 +490,7 @@ header {
     top: 0%;
     transform: translateY(0%);
     left: 25%;
-    scale: .8;
+    scale: 0.8;
     z-index: 2;
   }
 
@@ -510,10 +500,9 @@ header {
 
     top: 0%;
     left: 50%;
-    scale: .7;
+    scale: 0.7;
     z-index: 1;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -543,6 +532,7 @@ header {
 
   .web_audit_card_container {
     row-gap: 15px;
+    justify-content: center;
   }
 
   .icon {
@@ -827,12 +817,30 @@ header {
   padding: 100px 0 0 0;
   background-color: var(--bg-grey-section);
   clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
+
+  .button-group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 /* ------------- footer section-12 ---------- */
 footer {
   .footer-top {
     padding: 100px 0;
+    row-gap: 30px;
+  }
+
+  ul {
+    margin-bottom: 20px !important;
+  }
+  .para-3 {
+    line-height: 2.2;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   .footer-bottom {
@@ -856,12 +864,10 @@ footer {
 
 .audit-section {
   padding: 100px 20px;
-
-  & .para-1 {
+  .para-1 {
     margin-bottom: 80px;
   }
-
-  & .para-2 {
+  .para-2 {
     margin: 24px 0 0 0;
     color: var(--text-grey-2);
     line-height: 1.3;
@@ -877,6 +883,8 @@ footer {
 
     .audit-box {
       padding: 32px;
+      max-width: 280px;
+      max-height: 280px;
       background-color: var(--bg-light-blue);
       flex: 1;
       display: flex;
@@ -989,74 +997,142 @@ footer {
 }
 
 /* ------- media query -------- */
-@media (max-width: 768px) {
-
-  .btn-success,
-  .btn-green,
-  .btn-underline {
-    font-size: 14px;
+@media (min-width: 1480px) {
+  nav .nav-item a {
+  padding: 10px 20px !important;
   }
+}
+@media (max-width: 1480px) {
+  
+  .section-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header {
+    .navbar {
+      padding: 20px 0;
+    }
 
-  .agencies-section {
-
-    .swiper-button-prev,
-    .swiper-button-next {
-      width: 35px;
-      height: 35px;
-
-      & img {
-        width: 12px;
+    nav .nav-item a {
+      font-size: 16px;
+    }
+    .w-140 {
+      width: 120px;
+      &.btn-outline-green,
+      &.btn-green {
+        font-size: 14px !important;
+        padding: 12px 15px;
       }
     }
-
-    & h2 {
-      margin-bottom: 30px;
-    }
   }
 
-  .google-section {
-    padding: 0 15px !important;
-
-    & .para-2 {
-      br {
-        margin-bottom: 15px;
+  .banner-section {
+    .button-group{
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 20px;
+      align-items: start;
+      .banner-input{
+        margin: 30px 0 0 0;
       }
+
+     
     }
 
-    .report-images img {
-      max-width: 60%;
-      width: auto;
-      height: 340px;
-      min-height: 340px;
-    }
-
-    .image-2 {
-      left: 5%;
-    }
-
-    .image-3 {
-      right: 5%;
-      left: auto;
-      scale: .8;
-    }
   }
 
-  footer {
-    .footer-top {
-      padding: 40px 0;
-    }
+  .audit-section {
+    & .audit-container {
+      flex-wrap: wrap;
 
-    .footer-bottom {
-      padding: 20px 15px;
+      .audit-box {
+        flex: 1 1 20% !important;
+        padding: 20px;
+        aspect-ratio: 1;
+      }
     }
   }
 }
+@media (max-width: 1200px) {
+  header {
+    .navbar-expand-xl .navbar-nav {
+      gap: 10px;
+    }
+  }
+  .audit-section {
+    & .audit-container {
+      .audit-box {
+        flex: 1 1 25% !important;
+        padding: 20px;
+        aspect-ratio: 1;
+      }
+    }
+  }
 
+  .testimonials-section {
+    .card-body {
+        padding: 20px;
+    }
+}
+.google-section {
+  padding: 0 20px !important;
+}
+}
+@media (max-width: 991px) {
+  .trial-section {
+    margin-top: -190px;
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
 
-@media (max-width: 576px) {
+    .section-container {
+      margin-top: 100px;
+    }
+  }
+  .slider-section {
+    padding: 40px 15px;
+    .img-box {
+      width: 90px !important;
+      height: 90px !important;
+    }
+  }
+  .testimonials-section {
+    padding: 120px 0;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    .testimonials_card_container {
+      justify-content: center;
+      margin-bottom: 30px;
+      row-gap: 20px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .head-3 {
+      margin-bottom: 20px;
+    }
+
+    .para-1 {
+      margin-bottom: 40px;
+    }
+  }
+  .value-section {
+    .features {
+      padding-left: 0px;
+      gap: 25px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  button,
+  .btn-success,
+  .btn-green,
+  .btn-outline-green,
+  .btn-underline {
+    font-size: 14px !important;
+  }
   .section-container {
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;
   }
 
   .head-1 {
@@ -1104,24 +1180,103 @@ footer {
 
     .button-group {
       flex-direction: column;
-      gap: 0;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 20px;
     }
 
+    .mxw-380 {
+      margin: auto !important;
+    }
+
+    .banner-input {
+      margin: 20px 0;
+      height: 45px;
+    }
+  }
+
+  .audit-section {
+    & .audit-container {
+      flex-wrap: wrap;
+      .audit-box {
+        flex: 1 1 33.33% !important;
+        padding: 20px;
+        aspect-ratio: 1;
+      }
+    }
+  }
+
+  .value-section {
+    padding: 120px 0;
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+
+    & .para-1 {
+      margin-bottom: 30px;
+    }
+
+    .image {
+      padding: 0 0 30px;
+    }
   }
 
   .agencies-section {
     padding: 40px 0;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 35px;
+      height: 35px;
+
+      & img {
+        width: 12px;
+      }
+    }
+
+    & h2 {
+      margin-bottom: 30px;
+    }
   }
 
-  .value-section {
-    padding: 148px 0;
-    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
-  }
+  .google-section {
+    padding: 0 15px !important;
 
+    & .para-2 {
+      br {
+        margin-bottom: 15px;
+      }
+    }
+    .report-images img {
+      max-width: 60%;
+      width: auto;
+      height: 340px;
+      min-height: 340px;
+    }
+
+    .image-2 {
+      left: 5%;
+    }
+
+    .image-3 {
+      right: 5%;
+      left: auto;
+      scale: 0.8;
+    }
+  }
 
   .web_audit_section {
+    padding: 40px 15px;
+
+    .para-1 {
+      margin-bottom: 31px;
+    }
     .feature-card {
       padding: 25px 15px;
+      &::after {
+        width: 80%;
+        height: 80%;
+        background-size: contain;
+        right: -20%;
+      }
     }
 
     .icon {
@@ -1133,9 +1288,24 @@ footer {
     }
   }
 
+  footer {
+    .footer-top {
+      padding: 40px 0;
+    }
 
+    .footer-bottom {
+      padding: 20px 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
   .audit-section {
     padding: 40px 15px;
+
+    .para-1 {
+      margin-bottom: 30px;
+    }
 
     & .audit-container {
       flex-wrap: wrap;
@@ -1149,32 +1319,37 @@ footer {
   }
 
   .case-section {
-    padding: 100px 0;
+    padding: 150px 0;
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   }
 
-  .trial-section {
-    margin-top: -50px;
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
-  }
-
   .testimonials-section {
-    .testimonials_card_container {
-      margin-bottom: 30px;
-      row-gap: 15px;
-    }
-
-    .card-body {
-      padding: 20px;
-    }
-
     .head-3 {
       margin-bottom: 15px;
     }
 
     .para-1 {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
   }
 
+  .trial-section {
+    margin-top: -120px;
+    padding-top: 120px;
+
+    .section-container {
+      margin-top: 20px;
+    }
+
+    .button-group {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 10px;
+
+      .para-1 {
+        padding: 12px 20px;
+      }
+    }
+  }
 }

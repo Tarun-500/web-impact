@@ -22,11 +22,11 @@ const swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         576: {
-            slidesPerView: 2,  
+            slidesPerView: 1,  
             spaceBetween: 20,
         },
         1024: {
-            slidesPerView: 3,  
+            slidesPerView: 2,  
             spaceBetween: 30,
         },
         1400: {
@@ -47,6 +47,10 @@ var swiperLeft = new Swiper(".swiper-left", {
         disableOnInteraction: false,
     },
     breakpoints: {
+        0: {
+            slidesPerView: 3,  
+            spaceBetween: 20,
+        },
         576: {
             slidesPerView: 3,  
             spaceBetween: 20,
@@ -74,6 +78,10 @@ var swiperRight = new Swiper(".swiper-right", {
         reverseDirection: true,
     },
     breakpoints: {
+        0: {
+            slidesPerView: 3,  
+            spaceBetween: 20,
+        },
         576: {
             slidesPerView: 3,  
             spaceBetween: 20,
